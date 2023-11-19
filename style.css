@@ -1,0 +1,111 @@
+body{
+  background-image: url('rato.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  position: relative;
+}
+.titulo{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size: 10vw;
+  position: absolute;
+  left: 22%;
+  top: 20%;
+}
+.lista{
+  position: absolute;
+  top: 70%;
+  font-family: 'Times New Roman', Times, serif;
+  color: ivory;
+  text-decoration: none;
+  left: 4vw;
+  margin-top: 2%;
+  font-size: 5vw;
+}
+
+.page h1,p{
+  padding:10px 20px;
+}
+
+ .pagetextanimation{
+   color: red;
+  position: relative;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, black, black, black);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+ @keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.position{
+  position: absolute;
+  top: 80%;
+ 
+}
+.sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover, .offcanvas a:focus {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 8vw;
+      margin-left: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
