@@ -3,7 +3,7 @@
 
 function openNav() {
   document.getElementById("mySidenav")
-    .style.width = "70%";
+    .style.width = "80%";
 }
 
 function closeNav() {
